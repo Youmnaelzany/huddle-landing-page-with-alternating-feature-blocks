@@ -15,7 +15,7 @@ body {
   width: 90rem;
   max-width: 1440px;
   min-height: 100svh;
-  color: #00252E;
+  color: #00252e;
 }
 
 img,
@@ -59,39 +59,53 @@ header {
 }
 
 .header__btn {
-  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
 }
 
-section:not(.section--hero) {
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);}
+section:not(section 1) {
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
+}
 
-  .build__community {
-    -webkit-filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
-            filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
-  }
+.build__community {
+  -webkit-filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
+  filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
+}
 
-  .build__community {
-    position: relative;
-    bottom: -5rem;
-    z-index: 100px;
-    background-color: white;
-    border-radius: 0.9375rem;
-margin-top: 8rem;
+.build__community {
+  position: relative;
+  bottom: -5rem;
+  z-index: 100px;
+  background-color: white;
+  border-radius: 0.9375rem;
+  margin-top: 8rem;
+}
 
-  }
-  
+footer {
+  z-index: -100px;
+}
 
-  footer {
-    z-index: -100px;
-  }
-
-  footer svg {
-      fill: white;
+footer i {
+  color: white ;
+  background-color:  #00252e;
+}
+footer i:hover {
+  color: #FF52C1 ;
 }
 
 .icons__wrapper {
   width: 1.9515rem;
-height: 1.9375rem;
-padding: 1rem;
-border:  1px solid white;
+  height: 1.9375rem;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.icons__wrapper:hover {
+  border: 1px solid #FF52C1;
+}
+
+@media (max-width:375px) {
+  header {
+    background: url('/public/images/bg-hero-mobile.svg') none;
+    background-size: cover;
+  }
 }
