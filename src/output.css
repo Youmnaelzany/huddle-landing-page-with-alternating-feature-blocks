@@ -544,6 +544,34 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-\[-100px\] {
+  z-index: -100px;
+}
+
+.z-\[1000px\] {
+  z-index: 1000px;
+}
+
+.z-\[-1000px\] {
+  z-index: -1000px;
+}
+
 .mx-80 {
   margin-left: 20rem;
   margin-right: 20rem;
@@ -586,6 +614,10 @@ video {
   height: 3.5rem;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -612,6 +644,10 @@ video {
 
 .w-\[33\.5rem\] {
   width: 33.5rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -681,6 +717,10 @@ video {
 
 .gap-y-3 {
   row-gap: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-2xl {
@@ -956,16 +996,18 @@ p {
   }
 }
 
-header {
+/* section:first-of-type {
   background: url("/public/images/bg-hero-desktop.svg") no-repeat;
   background-size: cover;
-}
+  background-position: 0 0 ;
+
+} */
 
 .header__btn {
   box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
 }
 
-section:not(section 1) {
+section:not(:first-of-type) {
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -986,21 +1028,15 @@ footer {
 footer i {
   color: white ;
   background-color:  #00252e;
-}
-
-footer i:hover {
-  color: #FF52C1 ;
-}
-
-.icons__wrapper {
   width: 1.9515rem;
   height: 1.9375rem;
   padding: 1rem;
   border: 1px solid white;
 }
 
-.icons__wrapper:hover {
-  border: 1px solid #FF52C1;
+footer i:hover {
+  color: #FF52C1 ;
+  border-color: #FF52C1;
 }
 
 @media (max-width:375px) {
@@ -1017,4 +1053,144 @@ footer i:hover {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+@media (max-width: 375px) {
+  .sm\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .sm\:h-4 {
+    height: 1rem;
+  }
+
+  .sm\:h-6 {
+    height: 1.5rem;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
+  .sm\:w-\[6\.5rem\] {
+    width: 6.5rem;
+  }
+
+  .sm\:w-\[17\.5rem\] {
+    width: 17.5rem;
+  }
+
+  .sm\:w-60 {
+    width: 15rem;
+  }
+
+  .sm\:w-\[6\.5re\] {
+    width: 6.5re;
+  }
+
+  .sm\:w-64 {
+    width: 16rem;
+  }
+
+  .sm\:w-\[14\.75rem\] {
+    width: 14.75rem;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:px-\[2\.25rem\] {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .sm\:text-center {
+    text-align: center;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:leading-\[2\.25rem\] {
+    line-height: 2.25rem;
+  }
+
+  .sm\:leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .sm\:leading-\[1\.875rem\] {
+    line-height: 1.875rem;
+  }
+
+  .sm\:leading-\[1\.3125rem\] {
+    line-height: 1.3125rem;
+  }
 }
