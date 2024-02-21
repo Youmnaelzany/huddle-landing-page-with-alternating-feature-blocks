@@ -12,8 +12,6 @@
 }
 
 body {
-  width: 90rem;
-  max-width: 1440px;
   min-height: 100svh;
   color: #00252e;
 }
@@ -50,60 +48,5 @@ p {
   :has(:target) {
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
-  }
-}
-
-/* section:first-of-type {
-  background: url("/public/images/bg-hero-desktop.svg") no-repeat;
-  background-size: cover;
-  background-position: 0 0 ;
-
-} */
-
-.header__btn {
-  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.1);
-}
-
-section:not(:first-of-type) {
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.07);
-}
-
-.build__community {
-  -webkit-filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
-  filter: drop-shadow(0px 6px 13px rgba(0, 37, 46, 0.22));
-}
-
-.build__community {
-  position: relative;
-  bottom: -5rem;
-  z-index: 100px;
-  background-color: white;
-  border-radius: 0.9375rem;
-  margin-top: 8rem;
-}
-
-footer {
-  z-index: -100px;
-}
-
-footer i {
-  color: white ;
-  background-color:  #00252e;
-  width: 1.9515rem;
-  height: 1.9375rem;
-  padding: 1rem;
-  border: 1px solid white;
-
-}
-footer i:hover {
-  color: #FF52C1 ;
-  border-color: #FF52C1;
-}
-
-
-@media (max-width:375px) {
-  header {
-    background: url('/public/images/bg-hero-mobile.svg') none;
-    background-size: cover;
   }
 }

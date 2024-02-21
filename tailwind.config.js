@@ -3,17 +3,29 @@ module.exports = {
   content: ["index.html"],
   theme: {
     screens: {
-      'lg': {'max': '1440px'},
-      // => @media (max-width: 1023px) { ... }
-
-      'sm': {'max': '375px'},
-      // => @media (max-width: 639px) { ... }
+      sm: "375px",
+      md: "768px",
+      lg: "1440px",
     },
     fontFamily: {
-      "Open Sans": ["Open Sans", "sans-serif"],
+      "Open-Sans": ["Open Sans", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "3xl": " 0px 2px 7px 0px rgba(0, 0, 0, 0.10)",
+        "4xl": " 2px 3px 6px 1px rgba(255, 82, 193, 0.17)",
+        "5xl": " 0px 0px 14px 0px rgba(0, 0, 0, 0.07)",
+        "6xl": " 0px 0px 14px 0px rgba(0, 0, 0, 0.07)",
+      },
+      dropShadow: {
+        "3xl": "0px 3px 7px rgba(0, 37, 46, 0.22)",
+      },
+      backgroundImage: {
+        'hero-pattern-mobile': "url('/public/images/bg-hero-mobile.svg')",
+        'hero-pattern-desktop': "url('/public/images/bg-hero-desktop.svg')",
+      },
+    },
   },
   plugins: [],
 };
