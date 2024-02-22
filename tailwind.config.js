@@ -3,9 +3,9 @@ module.exports = {
   content: ["index.html"],
   theme: {
     screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1440px",
+      sm: {"min" : "375px" , "max": "640px"},
+      md: {"min" : "768px" , "max": "1024px"},
+      lg: {"min" : "1025px" , "max": "1441px"}
     },
     fontFamily: {
       "Open-Sans": ["Open Sans", "sans-serif"],
